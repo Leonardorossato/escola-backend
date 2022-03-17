@@ -1,4 +1,4 @@
-const sequelize = require('../connection/sqliteConnection')
+const sequelize = require('../connection/sqlConnection')
 const {Model, DataTypes} = require('sequelize')
 
 class Turmas extends Model {}
