@@ -32,18 +32,6 @@ Alunos.init({
     isAdmin: {
         type: DataTypes.BOOLEAN,
         defaultValue: false
-    },
-    createdAt: {
-        type: DataTypes.DATE,
-        allowNull: false
-    },
-    updatedAt: {
-        type: DataTypes.DATE,
-        allowNull: false
-    },
-    deletedAt: {
-        type: DataTypes.DATE,
-        allowNull: false
     }
 },{
     sequelize,
