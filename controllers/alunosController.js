@@ -3,8 +3,8 @@ const Alunos = require('../models/Alunos')
 class AlunosController {
     static getAllAlunos = async(req, res) => {
         try {
-            const alunos = await Alunos.findAll()
-            return res.status(200).json(alunos)
+            const allAlunos = await Alunos.findAll()
+            return res.status(200).json(allAlunos)
         } catch (error) {
             return res.status(500).json({error: error.message})
         }
