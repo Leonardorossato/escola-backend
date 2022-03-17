@@ -1,4 +1,4 @@
-const Alunos = require("../models/Alunos")
+const Alunos = require('../models/Alunos')
 
 class AlunosController {
     static getAllAlunos = async(req, res) => {
