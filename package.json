@@ -1,0 +1,8 @@
+{
+  "name": "escola-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Leonardorossato <leonardorossato21@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
