@@ -38,7 +38,7 @@ Matriculas.init({
     Matriculas.belongsTo(models.Alunos,{
         foreignKey: 'alunosId'
     })
-    Matriculas.belongsTo(models.Turmas, {
+    Matriculas.belongsToMany(models.Turmas, {
         foreignKey: 'turmasId'
     })
 })
