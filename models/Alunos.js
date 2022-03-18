@@ -29,6 +29,9 @@ Alunos.init({
     active: {
         type: DataTypes.BOOLEAN
     },
+    role: {
+        type: DataTypes.STRING
+    },
     isAdmin: {
         type: DataTypes.BOOLEAN,
         defaultValue: false
@@ -37,15 +40,7 @@ Alunos.init({
     sequelize,
     modelName: 'alunos',
     timestamps: true,
-    paranoid: true,
-    defaultScope : {
-        where: {active: true},
-    },
-    scope: {
-        all: {
-            where: {}
-        }
-    }
+    paranoid: true
 }, Alunos.associate = (models)=>{
     Alunos.hasMany(models.Turmas, {
         foreignKey: 'matriculaId'
