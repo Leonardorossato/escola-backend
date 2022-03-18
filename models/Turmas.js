@@ -18,10 +18,6 @@ Turmas.init({
         type: DataTypes.STRING,
         allowNull: false
     },
-    data_final:{
-        type: DataTypes.DATE,
-        allowNull: false
-    },
     alunosId:{
         type: DataTypes.INTEGER,
         allowNull: false,
