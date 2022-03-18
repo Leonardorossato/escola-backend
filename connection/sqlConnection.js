@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 const sequelize = new Sequelize({
     dialect: 'sqlite',
-    host: './dev.sqlite'
+    host: 'sql/dev.sqlite'
 })
 
 sequelize.sync().then(()=>{
